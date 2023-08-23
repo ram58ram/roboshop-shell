@@ -38,14 +38,14 @@ mkdir /app &>>$LOGFILE
 curl -L -o /tmp/shipping.zip https://roboshop-builds.s3.amazonaws.com/shipping.zip &>>$LOGFILE
 
 VALIDATE $? "Downloading shipping artifact"
- 
-unzip /tmp/shipping.zip &>>$LOGFILE
-
-VALIDATE $? "Unzipping shipping"
 
 cd /app &>>$LOGFILE
 
 VALIDATE $? "Moving to app directory"
+ 
+unzip /tmp/shipping.zip &>>$LOGFILE
+
+VALIDATE $? "Unzipping shipping"
 
 mvn clean package &>>$LOGFILE
 
