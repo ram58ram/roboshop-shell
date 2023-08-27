@@ -4,7 +4,7 @@
 NAMES=("mongodb" "redis")
 INSTANCE_TYPE=""
 IMAGE_ID=ami-03265a0778a880afb
-SECURITY_GROUP_ID=sg-0189d4870cc65fd55
+SECURITY_GROUP_ID=sg-032f7a4b67bbaa9e4
 DOMAIN_NAME=joindevops.online
 
 # if mysql or mongodb instance_type should be t3.medium , for all others it is t2.micro
