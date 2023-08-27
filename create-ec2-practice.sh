@@ -2,7 +2,7 @@
 
 NAMES=("mongodb" "redis")
 
-for severName in ${NAMES[@]}
+for serverName in ${NAMES[@]}
 do
     echo "ServerName is: $serverName"
 done
